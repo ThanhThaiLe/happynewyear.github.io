@@ -34,8 +34,15 @@ $(document).ready(function() {
   	context.fillRect(270, canvas.height, 10, -10);
   	context.fillRect(280, canvas.height, 10, -20);
   	context.fillRect(290, canvas.height, 10, -35);
+  	context.fillRect(300, canvas.height, 10, -25);
+  	context.fillRect(310, canvas.height, 10, -10);
+  	context.fillRect(320, canvas.height, 10, -20);
+  	context.fillRect(330, canvas.height, 10, -35);
+  	context.fillRect(340, canvas.height, 10, -25);
+  	context.fillRect(350, canvas.height, 10, -20);
+  	context.fillRect(360, canvas.height, 10, -25);
+  	context.fillRect(370, canvas.height, 10, -10);
+  	context.fillRect(380, canvas.height, 10, -20);
+  	context.fillRect(390, canvas.height, 10, -35);
   
-  
-
-
 });

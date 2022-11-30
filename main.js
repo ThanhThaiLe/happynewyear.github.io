@@ -1,14 +1,16 @@
 
 $(document).ready(
   button = document.getElementsByClassName('button-64')
-  
+
 );
 
 
 function start() {
-  document.getElementById('title').innerText='NEW YEAR COUNT DOWN'
+  document.getElementById('title').innerText = 'NEW YEAR COUNT DOWN'
+  //get date  start year
   var countDownDate = new Date("2023  Jan 01 00:00:00").getTime();
-  var sayTime = new Date("2023 Dec 31 23:59:49").getTime();
+  //get date end year
+  var sayTime = new Date("2022 Dec 31 23:59:49").getTime();
 
   // Update the count down every 1 second
   var x = setInterval(function () {
@@ -37,9 +39,18 @@ function start() {
     }
     if (distance <= 0) {
       clearInterval(x);
-      document.getElementById("container").innerHTML = "<h1>HAPPY NEW YEAR <br> <span>2023</span> </h1>";
-      var audio = new Audio("./song.mp3");
+      // <img src="image_meo.jpg" style="width:100px;height:100px" alt=""></img>
+      document.getElementById("container").innerHTML = "<img src=\"image_meo.jpg\" width=\"100px\" height=\"100px\"><h1>HAPPY NEW YEAR <br> <span>2023</span> </h1>";
+      var audio = new Audio("./Long-Phung-Sum-Vay-Huu-Tho.mp3");
       audio.play();
+        setTimeout(function () {
+          var audio = new Audio("./song.mp3");
+          audio.play();
+          setTimeout(function () {
+            var audio = new Audio("./TetDongDay-KayTranNguyenKhoa-5850771.mp3");
+            audio.play();
+          }, 261000)
+        }, 188000)
       Run();
 
     }
